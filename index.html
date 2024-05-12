@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://patchwiki.biligame.com https://w.wallhaven.cc;">
+    <title>原神角色选择器</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <div class="radio-input-wrapper">
+            <label class="label">
+                <input value="all" name="star-select" id="star-all" class="star-button" type="radio">
+                <div class="radio-design"></div>
+                <div class="label-text">所有星级</div>
+            </label>
+            <label class="label">
+                <input value="5星" name="star-select" id="star-5" class="star-button" type="radio">
+                <div class="radio-design"></div>
+                <div class="label-text">5星</div>
+            </label>
+            <label class="label">
+                <input value="4星" name="star-select" id="star-4" class="star-button" type="radio">
+                <div class="radio-design"></div>
+                <div class="label-text">4星</div>
+            </label>
+        </div>
+    
+        <div class="character-card">
+            <h1 id="character-name">角色名称</h1>
+            <img id="character-image" src="" alt="Character Image">
+            <p id="character-info">星级: 5星 | 元素属性: 火 | 武器类型: 长柄武器</p>
+            <button id="randomize-button">随机选择角色</button>
+        </div>   
+    </div>    
+    <script src="renderer.js"></script>
+</body>
+</html>
